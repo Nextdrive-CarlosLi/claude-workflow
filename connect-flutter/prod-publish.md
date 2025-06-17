@@ -1,4 +1,4 @@
-### Prod Publish Workflow
+# Connect Prod Publish Workflow
 
 #### 1. 指定或者取得最近的一次 release 版本
 case 1: 指定 release version
