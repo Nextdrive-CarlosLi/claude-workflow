@@ -34,6 +34,7 @@ MMO RPG Lineage II 風格
 ##### 2.5 部位界線規則
 - Chest 部位：僅覆蓋胸部區域，下緣止於腰線，不包含臀部
 - Pants 部位：從腰部/臀部開始，包含腰帶、臀甲等下半身護具
+- Shoulder 部位：僅肩甲護具，使用 "shoulder pauldrons only"，強化否定詞 "no chest no torso no breastplate no vest"，確保 "shoulder armor ends at shoulder joint"
 
 ##### 2.6 **防止人體生成規則** (重要!)
 - 明確使用 "floating armor piece" 概念
@@ -76,4 +77,48 @@ Ex: `--seed 399674`
 ### 模板使用範例 (闇影鎧甲 Chest)：
 ```
 dark shadow breastplate armor piece, medieval fantasy chest armor only, floating armor piece without body, hollow chest piece design, dark metal with shadow engravings, gothic ornate details, armor piece isolated on white background, no human no body no arms no legs, chest protection only ends at ribcage, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed [相同數字]
+```
+
+### Shoulder 部位特殊模板：
+```
+[服裝名稱] shoulder pauldrons only, separated left and right shoulder guards, floating shoulder armor pieces without body, hollow shoulder design, [材質和風格描述], [裝飾細節], shoulder pauldrons isolated on white background, no human no body no arms no legs no chest no torso no breastplate no vest, only shoulder cap protection, shoulder armor ends at shoulder joint, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed [相同數字]
+```
+
+## **完整案例：蒼瀾皮甲 (Azure Wave Leather Armor)**
+
+**統一 Seed：** `--seed 456789`
+
+### Chest 胸甲
+```
+azure wave leather breastplate armor piece, medieval fantasy chest armor only, floating armor piece without body, hollow chest piece design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver buckles, armor piece isolated on white background, no human no body no arms no legs, chest protection only ends at ribcage, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
+```
+
+### Shoulder 肩甲
+```
+azure wave leather shoulder pauldrons only, separated left and right shoulder guards, floating shoulder armor pieces without body, hollow shoulder design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver buckles, shoulder pauldrons isolated on white background, no human no body no arms no legs no chest no torso no breastplate no vest, only shoulder cap protection, shoulder armor ends at shoulder joint, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
+```
+
+### Hands 手套
+```
+azure wave leather gauntlets armor piece, medieval fantasy hand armor only, floating armor piece without body, hollow hand piece design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver buckles, armor piece isolated on white background, no human no body no arms no legs, hand protection gloves only, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
+```
+
+### Arm 臂甲
+```
+azure wave leather arm armor piece, medieval fantasy arm armor only, floating armor piece without body, hollow arm piece design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver buckles, armor piece isolated on white background, no human no body no arms no legs, arm protection piece only, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
+```
+
+### Pants 腿甲
+```
+azure wave leather leg armor piece, medieval fantasy pants armor only, floating armor piece without body, hollow pants piece design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver belt and buckles, armor piece isolated on white background, no human no body no arms no legs, leg protection from waist to ankles including belt, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
+```
+
+### Shoes 靴子
+```
+azure wave leather boots armor piece, medieval fantasy foot armor only, floating armor piece without body, hollow boot piece design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver buckles, armor piece isolated on white background, no human no body no arms no legs, foot protection boots only, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
+```
+
+### Back 背甲
+```
+azure wave leather back armor piece, medieval fantasy back armor only, floating armor piece without body, hollow back piece design, azure blue leather with wave patterns, ocean-inspired decorative elements with silver buckles, armor piece isolated on white background, no human no body no arms no legs, back protection piece only, 3D model reference sheet with multiple angles, front view and side view and back view clearly separated, orthographic views, technical drawing style, clean studio lighting --draft --v 7 --p bb77bb9a-3ce0-418c-bb37-bf99b026045a --seed 456789
 ```
