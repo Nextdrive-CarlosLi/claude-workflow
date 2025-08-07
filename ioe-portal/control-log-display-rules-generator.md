@@ -7,8 +7,8 @@
 - **Model**: 裝置模型名稱（例如：StgBattery, EVCharger, AirCon 等）
 
 ## Output
-- **JSON 文件**: 包含該模型及其變體的完整顯示規則配置
-- **i18n JSON 文件**: 包含所有 keyCode 的多國語系翻譯（繁中、英文、日文）
+- **JSON 文件**: 包含該模型及其變體的完整顯示規則配置, Ex: <Model>.json
+- **i18n JSON 文件**: 包含所有 keyCode 的多國語系翻譯（繁中、英文、日文）, 假設目的檔案存在，需要 merge 到原本的多國語系檔, 並確保 key 不會重複
 
 ## 前置需求
 
@@ -181,73 +181,67 @@ value_with_unit
 **繁體中文檔案** (`zh-TW.json`)：
 ```json
 {
-  "controlLog": {
-    "stg_battery_operation_mode": "運作模式",
-    "stg_battery_operation_mode_charging": "充電",
-    "stg_battery_operation_mode_discharging": "放電",
-    "stg_battery_charge_method": "充電方式",
-    "stg_battery_charge_method_max_power": "最大充電電力充電",
-    "stg_battery_charge_method_surplus_power": "剩餘電力充電",
-    "stg_battery_charge_method_designated_power": "指定電力充電",
-    "stg_battery_charge_method_designated_current": "指定電流充電",
-    "stg_battery_charge_method_others": "其他",
-    "value_with_unit": "{{value}} {{unit}}",
-    "controlled_by_app": "由 {{appName}} 控制",
-    "controlled_by_service": "由 {{serviceName}} 控制",
-    "controlled_by_system": "由系統控制",
-    "controlled_by_third_party": "由第三方控制"
-  }
+  "stg_battery_operation_mode": "運作模式",
+  "stg_battery_operation_mode_charging": "充電",
+  "stg_battery_operation_mode_discharging": "放電",
+  "stg_battery_charge_method": "充電方式",
+  "stg_battery_charge_method_max_power": "最大充電電力充電",
+  "stg_battery_charge_method_surplus_power": "剩餘電力充電",
+  "stg_battery_charge_method_designated_power": "指定電力充電",
+  "stg_battery_charge_method_designated_current": "指定電流充電",
+  "stg_battery_charge_method_others": "其他",
+  "value_with_unit": "{{value}} {{unit}}",
+  "controlled_by_app": "由 {{appName}} 控制",
+  "controlled_by_service": "由 {{serviceName}} 控制",
+  "controlled_by_system": "由系統控制",
+  "controlled_by_third_party": "由第三方控制"
 }
 ```
 
 **英文檔案** (`en.json`)：
 ```json
 {
-  "controlLog": {
-    "stg_battery_operation_mode": "Operation Mode",
-    "stg_battery_operation_mode_charging": "Charging",
-    "stg_battery_operation_mode_discharging": "Discharging",
-    "stg_battery_charge_method": "Charge Method",
-    "stg_battery_charge_method_max_power": "Maximum charging electric energy charging",
-    "stg_battery_charge_method_surplus_power": "Surplus electric energy charging",
-    "stg_battery_charge_method_designated_power": "Designated electric energy charging",
-    "stg_battery_charge_method_designated_current": "Designated current power charging",
-    "stg_battery_charge_method_others": "Others",
-    "value_with_unit": "{{value}} {{unit}}",
-    "controlled_by_app": "Controlled by {{appName}}",
-    "controlled_by_service": "Controlled by {{serviceName}}",
-    "controlled_by_system": "Controlled by System",
-    "controlled_by_third_party": "Controlled by Third Party"
-  }
+  "stg_battery_operation_mode": "Operation Mode",
+  "stg_battery_operation_mode_charging": "Charging",
+  "stg_battery_operation_mode_discharging": "Discharging",
+  "stg_battery_charge_method": "Charge Method",
+  "stg_battery_charge_method_max_power": "Maximum charging electric energy charging",
+  "stg_battery_charge_method_surplus_power": "Surplus electric energy charging",
+  "stg_battery_charge_method_designated_power": "Designated electric energy charging",
+  "stg_battery_charge_method_designated_current": "Designated current power charging",
+  "stg_battery_charge_method_others": "Others",
+  "value_with_unit": "{{value}} {{unit}}",
+  "controlled_by_app": "Controlled by {{appName}}",
+  "controlled_by_service": "Controlled by {{serviceName}}",
+  "controlled_by_system": "Controlled by System",
+  "controlled_by_third_party": "Controlled by Third Party"
 }
 ```
 
 **日文檔案** (`ja.json`)：
 ```json
 {
-  "controlLog": {
-    "stg_battery_operation_mode": "動作モード",
-    "stg_battery_operation_mode_charging": "充電",
-    "stg_battery_operation_mode_discharging": "放電",
-    "stg_battery_charge_method": "充電方式",
-    "stg_battery_charge_method_max_power": "最大充電電力充電",
-    "stg_battery_charge_method_surplus_power": "余剰電力充電",
-    "stg_battery_charge_method_designated_power": "指定電力充電",
-    "stg_battery_charge_method_designated_current": "指定電流充電",
-    "stg_battery_charge_method_others": "その他",
-    "value_with_unit": "{{value}} {{unit}}",
-    "controlled_by_app": "{{appName}}による制御",
-    "controlled_by_service": "{{serviceName}}による制御",
-    "controlled_by_system": "システムによる制御",
-    "controlled_by_third_party": "サードパーティによる制御"
-  }
+  "stg_battery_operation_mode": "動作モード",
+  "stg_battery_operation_mode_charging": "充電",
+  "stg_battery_operation_mode_discharging": "放電",
+  "stg_battery_charge_method": "充電方式",
+  "stg_battery_charge_method_max_power": "最大充電電力充電",
+  "stg_battery_charge_method_surplus_power": "余剰電力充電",
+  "stg_battery_charge_method_designated_power": "指定電力充電",
+  "stg_battery_charge_method_designated_current": "指定電流充電",
+  "stg_battery_charge_method_others": "その他",
+  "value_with_unit": "{{value}} {{unit}}",
+  "controlled_by_app": "{{appName}}による制御",
+  "controlled_by_service": "{{serviceName}}による制御",
+  "controlled_by_system": "システムによる制御",
+  "controlled_by_third_party": "サードパーティによる制御"
 }
 ```
 
 #### 8.4 檔案儲存路徑
-- 繁體中文：`/Users/carlosli/work/ioe-portal-ui/public/locales/zh-TW.json`
-- 英文：`/Users/carlosli/work/ioe-portal-ui/public/locales/en.json`
-- 日文：`/Users/carlosli/work/ioe-portal-ui/public/locales/ja.json`
+- `/Users/carlosli/work/ioe-portal-ui/src/locales/control-log/zh-TW/strings.json`
+- `/Users/carlosli/work/ioe-portal-ui/src/locales/control-log/en/strings.json`
+- `/Users/carlosli/work/ioe-portal-ui/src/locales/control-log/ja/strings.json`
 
 #### 8.5 翻譯資源管理
 1. **合併現有翻譯**：如果 i18n 檔案已存在，需要將新的 controlLog 區塊合併到現有結構中
@@ -329,9 +323,9 @@ value_with_unit
 
 ### i18n JSON 範例
 **檔案路徑**: 
-- `/Users/carlosli/work/ioe-portal-ui/public/locales/zh-TW.json`
-- `/Users/carlosli/work/ioe-portal-ui/public/locales/en.json`
-- `/Users/carlosli/work/ioe-portal-ui/public/locales/ja.json`
+- `/Users/carlosli/work/ioe-portal-ui/src/locales/portal/zh-TW/strings.json`
+- `/Users/carlosli/work/ioe-portal-ui/src/locales/portal/en/strings.json`
+- `/Users/carlosli/work/ioe-portal-ui/src/locales/portal/ja/strings.json`
 
 **內容特點**:
 - 完整的三語言支援（繁中、英、日）
