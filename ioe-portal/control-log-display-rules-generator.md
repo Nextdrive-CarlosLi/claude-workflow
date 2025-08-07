@@ -7,8 +7,8 @@
 - **Model**: 裝置模型名稱（例如：StgBattery, EVCharger, AirCon 等）
 
 ## Output
-- **JSON 文件**: 包含該模型及其變體的完整顯示規則配置, Ex: <Model>.json
-- **i18n JSON 文件**: 包含所有 keyCode 的多國語系翻譯（繁中、英文、日文）, 假設目的檔案存在，需要 merge 到原本的多國語系檔, 並確保 key 不會重複
+- **JSON 文件**: 包含該模型及其變體的完整顯示規則配置
+- **i18n JSON 文件**: 包含所有 keyCode 的多國語系翻譯（繁中、英文、日文)
 
 ## 前置需求
 
@@ -244,7 +244,7 @@ value_with_unit
 - `/Users/carlosli/work/ioe-portal-ui/src/locales/control-log/ja/strings.json`
 
 #### 8.5 翻譯資源管理
-1. **合併現有翻譯**：如果 i18n 檔案已存在，需要將新的 controlLog 區塊合併到現有結構中
+1. **合併現有翻譯**：如果 i18n 檔案已存在，區塊合併到現有結構中
 2. **避免重複**：檢查是否已存在相同的 keyCode，避免覆蓋現有翻譯
 3. **命名一致性**：確保所有語言版本的 keyCode 結構完全一致
 
@@ -312,7 +312,7 @@ value_with_unit
 ## 輸出範例
 
 ### Display Rules JSON 範例
-**檔案路徑**: `/Users/carlosli/work/ioe-portal-ui/dummies/json/stgBatteryDisplayRules.json`
+**檔案路徑**: `/Users/carlosli/work/ioe-portal-ui/dummies/json/control-log-rule.json`
 
 **內容特點**:
 - 包含所有模型變體的完整配置
