@@ -12,7 +12,7 @@
 
 ## 前置需求
 
-### 必要文件
+### 必要文件 (Confluence 文件，需要使用 tool 進行讀取)
 1. **Control Log 規格文件**: https://nextdrive.atlassian.net/wiki/spaces/NEB/pages/2541944966/R25.07A~07B+Control+Log
 2. **顯示規則格式規範**: https://nextdrive.atlassian.net/wiki/spaces/ioep/pages/2815098931
 
